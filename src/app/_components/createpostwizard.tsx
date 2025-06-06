@@ -5,8 +5,6 @@ import Image from "next/image";
 export default function CreatePostWizard() {
   const { user } = useUser();
 
-  console.log(user);
-
   if (!user) return null;
 
   return (
