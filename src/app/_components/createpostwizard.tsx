@@ -4,6 +4,8 @@ import { useUser } from "@clerk/nextjs";
 export default function CreatePostWizard() {
   const { user } = useUser();
 
+  console.log(user);
+
   if (!user) return null;
 
   return (
